@@ -1,2 +1,0 @@
-block	ref_seqid	ref_start	ref_end	target_seqid	target_start	target_end	orientation	identity_pct	anchor_score
-1	NC_063383.1	51	197159	P022_MOT_BCN.2022-07-22.lesion	62	197667	+	99.93	183799

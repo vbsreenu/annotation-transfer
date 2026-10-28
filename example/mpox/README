@@ -1,1 +1,0 @@
-python ../../transfer_annotation.py -r NC_063383.1.gff3 --ref-fasta NC_063383.fa -t P022_MOT_BCN.2022-07-22.lesion.fa -o P022_MOT_BCN.2022-07-22.lesion -p mpox 
