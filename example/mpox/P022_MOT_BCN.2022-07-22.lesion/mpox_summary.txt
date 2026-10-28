@@ -1,0 +1,80 @@
+Annotation transfer summary  (transfer_annotation.py v1.0.0)
+========================================================================
+Reference : NC_063383.1.gff3
+Target    : P022_MOT_BCN.2022-07-22.lesion.fa
+
+GENES
+  reference genes            : 179
+  transferred successfully   : 179 (100.0%)
+  failed                     : 0
+    identical to reference   : 136
+    with differences         : 43
+    partial / truncated      : 0
+    CDS with disruptive change: 2 of 179 CDS
+  other features (non-gene)  : 27 of 27 transferred
+  all features               : 385 of 385 transferred
+
+GENOME ALIGNMENT
+  reference length           : 197209 bp (99.9% in orthologous blocks)
+  target length              : 197728 bp (99.7% in orthologous blocks)
+  orthologous blocks         : 1 (0 inverted)
+  identity in blocks         : 99.93%
+  SNPs / insertions / deletions: 136 / 3 / 6
+
+GENES WITH DIFFERENCES (representative CDS/RNA)
+  gene                ref_len  tgt_len  nt_id% aa_id%  nsyn   syn  flags / aa changes
+  OPG001                  741      741   99.73  99.19     2     0  S105L,S225L
+  OPG002                 1050     1050   99.90  99.71     1     0  S54F
+  OPG003                 1767     1767   99.83  99.83     1     2  D264N
+  OPG015                 1314     1314   99.92  99.77     1     0  premature_stop:aa188 | Q188*
+  OPG019                  429      429   99.77 100.00     0     1  
+  OPG025                 1893     1893   99.95  99.84     1     0  A423D
+  OPG031                  951      951   99.89 100.00     0     1  
+  OPG037                 1329     1329   99.92 100.00     0     1  
+  OPG039                  855      855   99.88 100.00     0     1  
+  OPG044                  450      450   99.78 100.00     0     1  
+  OPG047                 1449     1449   99.86  99.79     1     1  R48C
+  OPG053                  639      639   99.84  99.53     1     0  P78S
+  OPG056                 1908     1908   99.84  99.84     1     2  E125K
+  OPG057                 1119     1119   99.82  99.73     1     1  E353K
+  OPG063                 1440     1440   97.22  94.78    25     0  D50X,I51X,F52X,V53X,L55X,V56X,K57X,K61X ...
+  OPG064                 2214     2214   98.96  97.83    17     0  R222X,L261X,I270X,F276X,I295X,I326X,D378X,E387X ...
+  OPG071                 3021     3021   99.93  99.90     1     1  L108F
+  OPG072                  288      288   99.65  98.95     1     0  D56N
+  OPG083                 1272     1272   99.92 100.00     0     1  
+  OPG092                 1116     1116   99.91  99.73     1     0  D196N
+  OPG093                  783      783   99.74  99.23     2     0  S30L,D88N
+  OPG094                 1023     1023   99.90  99.71     1     0  M142I
+  OPG098                  756      756   99.87  99.60     1     0  E162K
+  OPG105                 3861     3861   99.84  99.92     1     5  S734L
+  OPG109                 2388     2388   99.92  99.87     1     1  H740Y
+  OPG115                  702      702   99.86 100.00     0     1  
+  OPG118                 1914     1914   99.95  99.84     1     0  K606E
+  OPG136                 2676     2676   99.96  99.89     1     0  D98N
+  OPG139                  213      213   99.53  98.57     1     0  A17T
+  OPG145                 1479     1479   99.80  99.39     3     0  E62K,R243Q,E435K
+  OPG150                 1149     1149   99.91  99.74     1     0  S307L
+  OPG174                 1041     1041   99.90 100.00     0     1  
+  OPG176                  723      723   99.86  99.58     1     0  H221Y
+  OPG187                  912      912   99.89 100.00     0     1  
+  OPG188                 1512     1512   99.87 100.00     0     2  
+  OPG189                 1686     1686   99.94 100.00     0     1  
+  OPG193                  804      804   99.88  99.63     1     0  L263F
+  OPG198                  849      849   99.88 100.00     0     1  
+  OPG210                 5643     5643   99.95  99.84     3     0  D209N,P722S,M1741I
+  OPG015_dup             1314     1314   99.92  99.77     1     0  premature_stop:aa188 | Q188*
+  OPG003_dup             1767     1767   99.83  99.83     1     2  D264N
+  OPG002_dup             1050     1050   99.90  99.71     1     0  S54F
+  OPG001_dup              741      741   99.73  99.19     2     0  S105L,S225L
+
+OUTPUT FILES
+  annotated GenBank            P022_MOT_BCN.2022-07-22.lesion/mpox.gbk
+  annotated GFF3               P022_MOT_BCN.2022-07-22.lesion/mpox.gff3
+  gene table                   P022_MOT_BCN.2022-07-22.lesion/mpox_genes.tsv
+  feature table                P022_MOT_BCN.2022-07-22.lesion/mpox_features.tsv
+  variants                     P022_MOT_BCN.2022-07-22.lesion/mpox_variants.tsv
+  orthologous blocks           P022_MOT_BCN.2022-07-22.lesion/mpox_blocks.tsv
+  genome map (PNG)             P022_MOT_BCN.2022-07-22.lesion/mpox_genome_map.png
+  genome map (SVG)             P022_MOT_BCN.2022-07-22.lesion/mpox_genome_map.svg
+  HTML report                  P022_MOT_BCN.2022-07-22.lesion/mpox_report.html
+  text summary                 P022_MOT_BCN.2022-07-22.lesion/mpox_summary.txt

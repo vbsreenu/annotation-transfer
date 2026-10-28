@@ -1,0 +1,4 @@
+block	ref_seqid	ref_start	ref_end	target_seqid	target_start	target_end	orientation	identity_pct	anchor_score
+1	NC_000932.1	1	21069	simulated_chloroplast	134912	154911	+	98.01	85688
+1	NC_000932.1	21070	154478	simulated_chloroplast	1	134911	+	98.01	85688
+2	NC_000932.1	60001	70000	simulated_chloroplast	40422	50419	-	97.92	9452

@@ -1,0 +1,165 @@
+Annotation transfer summary  (transfer_annotation.py v1.0.0)
+========================================================================
+Reference : example/reference_NC_000932.gb
+Target    : example/target_simulated.fasta
+
+GENES
+  reference genes            : 129
+  transferred successfully   : 128 (99.2%)
+  failed                     : 1
+    identical to reference   : 6
+    with differences         : 122
+    partial / truncated      : 5
+    CDS with disruptive change: 43 of 84 CDS
+  failure reasons:
+    no orthologous sequence found            1
+  other features (non-gene)  : 0 of 0 transferred
+  all features               : 256 of 258 transferred
+
+GENOME ALIGNMENT
+  reference length           : 154478 bp (99.3% in orthologous blocks)
+  target length              : 154911 bp (99.0% in orthologous blocks)
+  orthologous blocks         : 2 (1 inverted)
+  identity in blocks         : 98.01%
+  SNPs / insertions / deletions: 3056 / 18 / 19
+  target regions >=500 bp without reference counterpart: 1
+
+FAILED GENES
+  psbA               CDS    NC_000932.1:383..1444(-)             no orthologous sequence found (absent or too divergent)
+
+GENES WITH DIFFERENCES (representative CDS/RNA)
+  gene                ref_len  tgt_len  nt_id% aa_id%  nsyn   syn  flags / aa changes
+  matK                   1515     1510   97.43  50.79    25     7  stop_codon_lost,frameshift:1_indel(s),premature_stop:aa116 | H35D,G36C,I109F,G116*,L144*,F147Y,Y195*,I196K ...
+  rps16                   240      240   98.75  96.20     3     0  D23Y,R28S,L50F
+  trnQ                     72       72   98.61      -     -     -  
+  psbK                    186      186   98.39  96.72     2     1  M1L,P44H
+  psbI                    111      111   96.40  88.89     4     0  L6V,V11L,F14L,F15L
+  trnS                     88       88   97.73      -     -     -  
+  atpA                   1524     1530   97.39  94.67    27     7  stop_codon_lost,premature_stop:aa443 | I4V,N21S,V54G,G59S,G80C,V89F,L112W,D117N ...
+  atpF                    555      555   97.48  94.02    11     3  V9L,F20I,I42N,F44L,N62S,N66Y,N98Y,E104D ...
+  atpH                    246      246   99.59  98.77     1     0  A58P
+  atpI                    750      750   97.73  95.18    12     4  S20T,V22L,F28I,I60F,Q88P,A141V,S187L,S189G ...
+  rps2                    711      711   98.31  96.61     8     4  H19N,R52S,E56V,M104L,L105V,R136G,R215P,V222L
+  rpoC2                  4131     4135   97.85  86.34    62    15  stop_codon_lost,frameshift:5_indel(s),premature_stop:aa338 | H10R,V13L,T44S,E102Q,F125S,H144D,L146F,L206V ...
+  rpoC1                  2043     2043   98.78  97.65    16     8  premature_stop:aa49 | D3V,I12L,K49*,F56C,V76E,L140V,C143S,G226V ...
+  rpoB                   3219     3217   97.76  27.52    50    19  stop_codon_lost,frameshift:1_indel(s),premature_stop:aa140 | A11S,P39A,I41S,K65N,M107V,L110F,N124T,Q125N ...
+  trnC                     71       71   98.59      -     -     -  
+  petN                     90       90   96.67  89.66     3     0  S5I,F15L,G25R
+  psbM                    105      105   98.10  94.12     2     0  N4D,P18A
+  trnD                     74       74   97.30      -     -     -  
+  trnY                     84       84   94.05      -     -     -  
+  trnE                     73       73   97.26      -     -     -  
+  trnT                     72       72   94.44      -     -     -  
+  psbD                   1062     1062   98.12  95.75    15     5  D21E,V31E,F39V,S80P,F114L,F131L,S136Y,P162L ...
+  psbC                   1422     1422   97.40  95.14    23    14  premature_stop:aa276 | R8K,H53D,A55S,H74R,V116L,S121F,E138A,G148R ...
+  trnS                    628      628   98.57      -     -     -  
+  psbZ                    189      189   98.94 100.00     1     1  stop_codon_lost | S62_endinsR
+  trnG                     71       71   97.18      -     -     -  
+  trnfM                    74       74   98.65      -     -     -  
+  rps14                   303      303   98.68  96.00     4     0  K12M,I34L,K46R,P51L
+  psaB                   2205     2201   97.64  78.47    38     8  stop_codon_lost,frameshift:1_indel(s),premature_stop:aa82 | A2P,I46S,W70C,L82*,G97R,Y121S,W124*,Y136S ...
+  psaA                   2253     2253   98.49  96.80    24     9  premature_stop:aa346 | S5T,E64A,R68G,Y89C,Q113L,I118L,L156V,P237R ...
+  ycf3                    507      507   98.42  96.43     6     2  T29A,F36Y,E60G,Y73D,V114L,L161F
+  trnS                     87       87   98.85      -     -     -  
+  rps4                    606      606   97.69  95.02    10     2  premature_stop:aa114 | K10I,G59A,M89V,G114*,I122M,P132H,D140E,E159G ...
+  ArthCt100                73       73   98.63      -     -     -  
+  trnL                     85       85   97.65      -     -     -  
+  trnF                     73       73   98.63      -     -     -  
+  ndhJ                    477      477   98.74  96.84     5     1  premature_stop:aa140 | V7I,P61R,G63A,E75G,W140*
+  ndhK                    678      678   98.08  95.11    11     2  L22V,S33T,C43G,L51F,F56S,D57H,V64L,Q95H ...
+  ndhC                    363      362   99.45  99.17     1     1  3'_truncated:1nt,frameshift | K40N
+  trnV                     74       74   97.30      -     -     -  
+  atpE                    399      395   95.49  61.36    12     2  stop_codon_lost,frameshift:1_indel(s),premature_stop:aa97 | N4T,D16N,A43V,D45V,W57R,T59S,G65R,I69R ...
+  atpB                   1497     1497   98.20  96.18    19     7  I27T,M40R,Q57R,R73G,P97L,N120K,V155G,S197T ...
+  rbcL                   1440     1440   98.19  96.24    18     8  E28K,Q45E,P91R,F97Y,I155F,S208T,F218Y,A222P ...
+  accD                   1467     1467   98.16  96.11    19     8  premature_stop:aa185 | T34I,S37C,S57R,S93R,K103E,K147Q,N180Y,I184L ...
+  psaI                    114      114   98.25  97.30     1     1  I22V
+  ycf4                    555      326   97.85  55.43     5     2  5'_truncated:229nt,premature_stop:aa30 | M1_S77del,C82Y,W107*,R140P,D158A,E165G
+  cemA                    690      690   97.39  93.89    14     4  premature_stop:aa42 | A2T,K5Q,W39L,R42*,H89P,N100H,I115K,S121I ...
+  petA                    963      963   98.75  97.50     8     4  S21T,Q41L,Y44D,F178L,G186D,S201T,I278K,V297D
+  psbJ                    123      123   98.37  95.00     2     0  L10I,S32A
+  psbL                    117      117   96.58  97.37     1     3  N7I
+  psbF                    120      120   98.33 100.00     0     2  
+  psbE                    252      252   98.02  95.18     4     1  start_codon_lost:ATG>ACG | M1T,S4I,R18G,D77V
+  petL                     96       96   97.92  96.77     1     1  A14V
+  petG                    114      114   97.37  94.59     2     1  M1I,D33Y
+  trnW                     74       74   95.95      -     -     -  
+  trnP                     74       74   98.65      -     -     -  
+  psaJ                    135      135   98.52  95.45     2     0  Y7S,F44I
+  rpl33                   201      201   97.51  93.94     4     1  premature_stop:aa47 | C15F,K24E,N38K,E47*
+  rps18                   306      306   96.08  94.06     6     6  start_codon_lost:ATG>AGG | M1R,K3N,L7I,T9P,M33R,R49I
+  rpl20                   354      354   98.02  95.73     5     1  R18H,R55N,T63N,N84I,K88M
+  rps12                   372      258   98.84  67.48     2     1  5'_truncated:114nt | M1_Y38del,K88Q,A104S
+  rps12                   372      258   97.29  63.41     7     0  5'_truncated:114nt | M1_Y38del,P45R,A48V,R54K,R83I,V87I,K108E,Q111K
+  clpP                    591      482   98.13  77.04     9     0  3'_truncated:109nt,frameshift,premature_stop:aa65 | L50V,E57K,L65*,I80N,A100V,S101P,V123G,M124V ...
+  psbB                   1527     1527   97.77  94.88    26     6  premature_stop:aa197 | W5L,W75T,Y93S,G98R,P136H,I141F,C150S,G176R ...
+  psbT                    102      102   99.02  96.97     1     0  T13A
+  psbN                    132      132   98.48  95.35     2     0  I9T,F38Y
+  psbH                    222      222   99.10  97.26     2     0  T3A,I57T
+  petB                    648      648   97.99  96.28     8     5  K3N,Y5N,M93K,I98N,A173V,T195M,F198L,L204P
+  petD                    483      483   97.31  92.50    12     1  T4I,K6I,E74A,Y80C,T90R,L96F,G97R,T110A ...
+  rpoA                    990      990   98.48  96.35    12     3  K39N,V84E,V95L,D120E,I121V,E148V,F176L,M177L ...
+  rps11                   417      423   95.74  94.20     8     4  premature_stop:aa33 | N13S,I25K,Q33*,A56_G57insL*,N78I,V84G,M88L,S112G ...
+  rpl36                   114      114   97.37  91.89     3     0  S6P,I23T,I26F
+  rps8                    405      405   97.53  94.03     8     2  premature_stop:aa104 | D17E,R52L,N54K,R67Q,S83T,G104*,E119Q,L130S
+  rpl14                   369      369   97.83  96.72     4     4  D37N,I62N,G95R,P119A
+  rpl16                   408      408   97.79  94.81     7     2  premature_stop:aa12 | Q12*,W41*,I42N,E48K,P90T,I132F,S134A
+  rps3                    657      653   96.35  84.40    12     8  stop_codon_lost,frameshift:1_indel(s),premature_stop:aa151 | G13R,Y77S,V92L,M97I,K101E,N104I,N107S,R108I ...
+  rpl22                   483      483   98.14  95.00     8     1  premature_stop:aa126 | E40D,K59E,A65T,S109T,Y123C,Y126*,S139N,L145P
+  rps19                   279      279   98.21  96.74     3     2  K13R,T24R,H69Q
+  rpl2                    825      825   98.18  95.99    11     4  premature_stop:aa168 | S12R,S20T,R50S,A69T,L128Q,I139L,K168*,V193L ...
+  rpl23                   282      282   98.23  96.77     3     2  K46Q,I85N,R92G
+  ycf2                   6885     6889   98.08  70.75    94    31  stop_codon_lost,frameshift:1_indel(s),premature_stop:aa1046 | K7R,I16L,K21N,N22K,S174Y,F191I,F207L,I248F ...
+  trnL                     81       81   97.53      -     -     -  
+  ndhB                   1539     1539   97.92  95.51    23     8  premature_stop:aa348 | F10I,L12I,F27V,E35D,L44V,L45I,N97H,E117D ...
+  rps7                    468      468   98.93  96.77     5     0  S14F,Y44F,R79S,P88T,K138R
+  trnV                     72       72   97.22      -     -     -  
+  rrn16S                 1491     1491   98.19      -     -     -  
+  trnI                     72       78   91.03      -     -     -  
+  trnA                     73       73   97.26      -     -     -  
+  rrn23S                 2810     2810   98.15      -     -     -  
+  rrn4.5S                 103      103   98.06      -     -     -  
+  trnR                     74       74   98.65      -     -     -  
+  trnN                     72       72   98.61      -     -     -  
+  ycf1                   1032     1032   98.55  95.63    15     0  premature_stop:aa299 | S14Y,S22W,V24F,T121S,N200K,N211D,I230V,T249N ...
+  ndhF                   2241     2237   97.90  42.90    30    12  stop_codon_lost,frameshift:1_indel(s),premature_stop:aa106 | F13L,V24A,M39T,T41N,L106*,S116W,L138F,C175R ...
+  rpl32                   159      159   97.48  98.08     1     3  R14G
+  trnL                     80       80   97.50      -     -     -  
+  ccsA                    987      987   97.97  96.34    12     8  premature_stop:aa64 | I13K,N32T,I48V,Y64*,L101I,S108R,L148*,E188Q ...
+  ndhD                   1503     1499   97.07  76.00    33     7  stop_codon_lost,frameshift:1_indel(s),premature_stop:aa49 | F23L,Y49*,E66*,Y77D,T98P,P106T,F113Y,F114S ...
+  psaC                    246      246   99.59  98.77     1     0  G50V
+  ndhE                    306      306   96.73  92.08     9     1  stop_codon_lost,premature_stop:aa77 | I2L,N42S,F52V,F62C,F65L,G77*,R88*,I93T ...
+  ndhG                    531      531   98.49  98.30     3     5  S53P,V123G,F156C
+  ndhI                    519      519   98.65  96.51     6     1  M9L,E45D,I65V,N88H,P115R,D152E
+  ndhA                   1083     1087   97.52  73.33    14     7  stop_codon_lost,frameshift:2_indel(s),premature_stop:aa242 | L88I,R163P,I173R,T191S,I220N,E225G,I241_G243del,Y244H ...
+  ndhH                   1182     1182   98.48  96.44    14     4  premature_stop:aa90 | N14H,V25L,A55T,T68K,R69Q,G90*,Q93K,R97T ...
+  rps15                   267      268   97.01  44.32     7     0  stop_codon_lost,frameshift:1_indel(s),premature_stop:aa64 | N4D,S16N,R17G,R32S,R33K,L34T,T35Y,S36F ...
+  ycf1                   5361     5361   98.15  96.08    70    27  premature_stop:aa59 | Y29S,F36V,R49G,E59*,K60E,A64G,M75R,Y80H ...
+  trnN                     72       68   90.28      -     -     -  
+  trnR                     74       74   98.65      -     -     -  
+  ArthCr091               121      121   99.17      -     -     -  
+  ArthCr090               103      103   98.06      -     -     -  
+  ArthCr089              2810     2810   97.40      -     -     -  
+  trnA                     73       73   94.52      -     -     -  
+  trnI                     72       72   97.22      -     -     -  
+  ArthCr088              1491     1491   97.92      -     -     -  
+  ArthCt112                72       72   97.22      -     -     -  
+  rps7                    468      468   96.37  90.32    15     2  premature_stop:aa48 | S2A,L22I,K48*,R63C,I66M,D72A,K97T,I101N ...
+  ndhB                   1539     1538   98.05  47.66    19     9  stop_codon_lost,frameshift:1_indel(s),premature_stop:aa35 | E35*,K55R,I72K,T93P,T122P,L131S,L149I,L165P ...
+  trnL                     81       81   97.53      -     -     -  
+  ycf2                   6885     6888   97.97  95.38   105    30  premature_stop:aa222 | N22T,S38F,R48L,R50S,G107V,R119K,E124D,N131I ...
+  trnI                     74       74   98.65      -     -     -  
+  rpl23                   282      282   98.23  94.62     5     0  V39L,M50L,S84T,I85S,K90Q
+  rpl2                    825      825   98.55  97.45     7     5  C37Y,T145A,G167R,A170T,I182V,S202G,L212Q
+
+OUTPUT FILES
+  annotated GenBank            example/output/chloroplast_example.gbk
+  annotated GFF3               example/output/chloroplast_example.gff3
+  gene table                   example/output/chloroplast_example_genes.tsv
+  feature table                example/output/chloroplast_example_features.tsv
+  variants                     example/output/chloroplast_example_variants.tsv
+  orthologous blocks           example/output/chloroplast_example_blocks.tsv
+  genome map (PNG)             example/output/chloroplast_example_genome_map.png
+  genome map (SVG)             example/output/chloroplast_example_genome_map.svg
+  HTML report                  example/output/chloroplast_example_report.html
+  text summary                 example/output/chloroplast_example_summary.txt
